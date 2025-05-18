@@ -1,1 +1,6 @@
 venv/
+spark/checkpoints
+spark/output
+spark/
+spark-submit.txt
+streamlit_dashboard.py
