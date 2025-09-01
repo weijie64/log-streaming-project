@@ -13,7 +13,6 @@ es = Elasticsearch(
     verify_certs=False
 )
 
-# Kafka consumer setup
 consumer = KafkaConsumer(
     'logs',
     bootstrap_servers='localhost:9092',

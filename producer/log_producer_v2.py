@@ -3,7 +3,7 @@ import random
 import time
 from kafka import KafkaProducer
 import json
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 
 producer = KafkaProducer(
     bootstrap_servers='localhost:9092',
@@ -20,11 +20,13 @@ messages = {
     "CRITICAL": ["System crash", "Memory leak detected", "Kernel panic"]
 }
 
+MYT = timezone(timedelta(hours=8))
+
 def generate_random_log():
     level = random.choices(log_levels, weights=[0.2, 0.3, 0.2, 0.2, 0.1])[0]
     message = random.choice(messages[level])
     return {
-        "timestamp": datetime.utcnow().isoformat() + "Z",  # ISO format with UTC indicator
+        "timestamp": datetime.now(MYT).isoformat(), 
         "level": level,
         "message": message,
         "app": "my-python-service"
