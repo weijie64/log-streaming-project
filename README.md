@@ -10,7 +10,7 @@ This project demonstrates a simple **log streaming pipeline** using **Apache Kaf
 - **Kafka (Apache Kafka)**: Handles streaming and message brokering.
 - **Kafka Consumer (Python)**: Consumes logs from Kafka and pushes them to Elasticsearch.
 - **Elasticsearch**: Stores and indexes log data for querying.
-- **(Optional) Kibana**: Used for visualizing log data.
+- **Kibana**: Used for visualizing log data.
 
 ---
 
