@@ -2,7 +2,6 @@
 
 This project demonstrates a simple **log streaming pipeline** using **Apache Kafka**, **Python**, and **Elasticsearch**. It simulates log generation, streams logs to Kafka, consumes them, and stores them in Elasticsearch for real-time search and analytics.
 
-![Uploading image.png…]()
 
 ---
 
