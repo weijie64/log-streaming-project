@@ -16,7 +16,6 @@ This project demonstrates a simple **log streaming pipeline** using **Apache Kaf
 
 ---
 
-## Architecture
+## Data visualization 
 
-```text
-[ Log Producer ] ---> [ Kafka Topic ] ---> [ Kafka Consumer ] ---> [ Elasticsearch ]
+<img width="1436" height="722" alt="Snipaste_2025-09-03_15-33-32" src="https://github.com/user-attachments/assets/f4aea67e-3bbe-433c-9c19-b7cbbf3bd86d" />
